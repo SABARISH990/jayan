@@ -23,7 +23,7 @@ export default function WhatsAppButton() {
   }, []);
   const handleCallClick = (e) => {
   e.stopPropagation();
-  const phoneNumber = "+911234567890"; // Replace with your phone number
+  const phoneNumber = "+91 9087877818"; // Replace with your phone number
   window.location.href = `tel:${phoneNumber}`;
 };
 
