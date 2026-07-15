@@ -26,7 +26,7 @@ const currentPrice = cake?.prices?.["1kg"] || cake?.price || 0;
   if (!cake) {
     return (
       
-      <div style={{ textAlign: 'center', padding: '120px 24px' }}>
+      <div className="section about-section">
         <h2 style={{ fontSize: '2.2rem', marginBottom: '16px' }}>Cake Not Found</h2>
         <p style={{ color: 'var(--color-text-muted)', marginBottom: '30px' }}>The cake you are looking for does not exist or has been retired from our oven.</p>
         <Link to="/cakes" className="btn-primary">Back to Cake Menu</Link>
