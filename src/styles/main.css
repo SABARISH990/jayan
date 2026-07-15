@@ -3260,7 +3260,23 @@ FEATURE GRID
     color:var(--color-text-muted);
     line-height:1.7;
 }
-
+.scroll-top-btn {
+  position: fixed !important;
+  right: 30px !important;
+  bottom: 100px !important;
+  width: 55px !important;
+  height: 55px !important;
+  border-radius: 50%;
+  border: none;
+  background: #5c3a21 !important;
+  color: white !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  z-index: 999999 !important;
+  opacity: 1 !important;
+}
 /* ==============================
 RESPONSIVE
 ============================== */
@@ -3375,4 +3391,21 @@ RESPONSIVE
       bottom:18px !important;
   }
 
+}
+html,
+body,
+#root {
+  cursor: auto !important;
+}
+
+* {
+  cursor: auto !important;
+}
+
+a,
+button,
+input,
+textarea,
+select {
+  cursor: pointer !important;
 }

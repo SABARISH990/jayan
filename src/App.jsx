@@ -34,7 +34,7 @@ export default function App() {
   return (
     <BrowserRouter>
       {/* Premium custom mouse trail (Disabled automatically on touchscreens) */}
-      <CustomCursor />
+     <CustomCursor />
 
       {/* Top scroll progress meter */}
       <motion.div 

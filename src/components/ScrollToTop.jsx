@@ -22,7 +22,10 @@ export default function ScrollToTop() {
     };
 
     window.addEventListener('scroll', toggleVisibility);
-    return () => window.removeEventListener('scroll', toggleVisibility);
+
+    return () => {
+      window.removeEventListener('scroll', toggleVisibility);
+    };
   }, []);
 
   const scrollToTop = () => {
@@ -33,14 +36,18 @@ export default function ScrollToTop() {
   };
 
   return (
-    <button
-      className={`scroll-top-btn ${visible ? 'visible' : ''}`}
-      onClick={scrollToTop}
-      title="Scroll to Top"
-      aria-label="Scroll to top"
-      id="scroll-to-top"
-    >
-      <ArrowUp size={20} />
-    </button>
+    <>
+      {visible && (
+        <button
+          className="scroll-top-btn"
+          onClick={scrollToTop}
+          title="Scroll to Top"
+          aria-label="Scroll to top"
+          id="scroll-to-top"
+        >
+          <ArrowUp size={20} />
+        </button>
+      )}
+    </>
   );
 }

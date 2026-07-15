@@ -125,7 +125,7 @@ export default function Reviews() {
                   type="text"
                   id="rev-name"
                   className="form-control"
-                  placeholder="E.g. Sarah Jenkins"
+                  placeholder="E.g. Sabarish"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
@@ -139,7 +139,7 @@ export default function Reviews() {
                   type="text"
                   id="rev-city"
                   className="form-control"
-                  placeholder="E.g. San Francisco, CA"
+                  placeholder="E.g.Tiruppur"
                   value={city}
                   onChange={(e) => setCity(e.target.value)}
                   required
