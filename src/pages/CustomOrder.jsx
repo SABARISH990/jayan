@@ -86,8 +86,9 @@ Thank you! 😊`;
                 />
               </div>
 
-              <div className="form-group">
+            <div className="form-group">
   <label>Cake Flavour *</label>
+
   <select
     name="flavour"
     className="form-control"
@@ -99,13 +100,14 @@ Thank you! 😊`;
 
     {[
       ...new Set(
-        CAKES_DATA.flatMap((cake) => cake.flavours || [])
+        CAKES_DATA.map((cake) => cake.name)
       ),
-    ].map((flavour) => (
-      <option key={flavour} value={flavour}>
-        {flavour}
+    ].map((cakeName) => (
+      <option key={cakeName} value={cakeName}>
+        {cakeName}
       </option>
     ))}
+
   </select>
 </div>
 <div className="form-group">
