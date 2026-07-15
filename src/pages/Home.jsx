@@ -193,7 +193,7 @@ export default function Home() {
               <motion.img 
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.5 }}
-                src="https://tse2.mm.bing.net/th/id/OIP.Ovctbef1YjBbxHqdh-5sCgHaEJ?r=0&pid=Api&P=0&h=180" 
+                src="https://img.freepik.com/premium-photo/strawberry-cake-hd-8k-wallpaper-stock-photographic-image_915071-70899.jpg" 
                 alt="Delicate rose gold cake decorator"
                 style={{ borderRadius: 'var(--radius-md)', height: '300px', width: '100%', objectFit: 'cover', border: '4px solid var(--color-white)', boxShadow: 'var(--shadow-soft)' }}
                 referrerPolicy="no-referrer"
