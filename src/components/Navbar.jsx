@@ -127,7 +127,7 @@ export default function Navbar() {
         </Link>
 
         {/* Links list for Desktop */}
-        <div className="nav-menu-desktop" style={{ display: 'flex', alignItems: 'center', gap: '28px' }}>
+        <div className="nav-menu-desktop">
           <NavLink to="/" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
             Home
           </NavLink>
@@ -162,7 +162,7 @@ export default function Navbar() {
           style={{
             background: 'none',
             border: 'none',
-            display: 'none', // Overridden by media query in CSS, but let's declare custom toggle button styles here or handle gracefully
+             // Overridden by media query in CSS, but let's declare custom toggle button styles here or handle gracefully
             cursor: 'pointer',
             padding: '8px',
             position: 'relative',
