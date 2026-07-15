@@ -172,7 +172,8 @@ export default function Home() {
             border: '1.5px solid rgba(231, 84, 128, 0.15)',
             borderRadius: 'var(--radius-md)',
             padding: '48px',
-            display: 'grid',
+            display: 'flex',
+            flexDirection: 'column',
             gridTemplateColumns: '1.2fr 1fr',
             alignItems: 'center',
             gap: '40px',
@@ -204,32 +205,59 @@ export default function Home() {
 
       {/* 5. Customer Reviews Preview */}
       <section className="section" id="reviews-preview" style={{ padding: '100px 24px' }}>
-        <FadeIn amount={0.1}>
-          <div className="section-header">
-            <span className="section-badge">Sweet Endorsements</span>
-            <h2 className="section-title">Loved by Our Neighbors</h2>
-            <p className="section-subtitle">
-              There is nothing more satisfying than hearing the happy sounds of families cutting our homemade creations. Read real words from our sweet community.
-            </p>
-          </div>
-        </FadeIn>
+  <FadeIn amount={0.1}>
+    <div className="section-header">
+      <span className="section-badge">Customer Stories</span>
 
-        <FadeIn amount={0.05}>
-          <div className="reviews-page-grid" style={{ gridTemplateColumns: '1fr 1fr', maxWidth: '1000px', margin: '0 auto', gap: '30px' }}>
-            {featuredReviews.map(review => (
-              <ReviewCard key={review.id} review={review} />
-            ))}
-          </div>
-        </FadeIn>
+      <h2 className="section-title">
+        Sweet Moments From Happy Customers
+      </h2>
 
-        <FadeIn amount={0.1} direction="up" delay={0.1}>
-          <div style={{ textAlign: 'center', marginTop: '40px' }}>
-            <Link to="/reviews" className="btn-secondary" id="view-all-reviews-home">
-              Read More Customer Love
-            </Link>
-          </div>
-        </FadeIn>
-      </section>
+      <p className="section-subtitle">
+        Every cake becomes a part of someone's special celebration.
+        Here are some heartfelt words from customers who enjoyed our
+        handcrafted homemade cakes.
+      </p>
+    </div>
+  </FadeIn>
+
+
+  <FadeIn amount={0.05}>
+    <div 
+      className="reviews-page-grid"
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        maxWidth: '750px',
+        margin: '0 auto',
+        gap: '30px'
+      }}
+    >
+      {featuredReviews.map(review => (
+        <ReviewCard 
+          key={review.id} 
+          review={review} 
+        />
+      ))}
+    </div>
+  </FadeIn>
+
+
+  <FadeIn amount={0.1} direction="up" delay={0.1}>
+    <div style={{ 
+      textAlign: 'center', 
+      marginTop: '40px' 
+    }}>
+      <Link 
+        to="/reviews" 
+        className="btn-secondary" 
+        id="view-all-reviews-home"
+      >
+        Explore More Customer Reviews
+      </Link>
+    </div>
+  </FadeIn>
+</section>
 
      
       
