@@ -1,0 +1,6 @@
+{
+  "name": "Homemade Cake Shop",
+  "description": "A premium homemade cake shop website featuring elegant designs, menu displays, custom cake builders, and interactive customer reviews.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
